@@ -1,0 +1,42 @@
+﻿id,id_persona,semana,franja,area,tipo_de_empresa,motivo
+1,P001,31,Mañana,Obra Norte,Constructora,Supervisión
+2,P002,31,Mañana,Obra Norte,Constructora,Supervision
+3,P003,31,Mañana,Oficina Central,Diseño,Entrega De Planos
+4,P004,31,Noche,Sala De Servidores,Soporte TI,Mantenimiento
+5,P005,31,Mañana,Oficina Central,Sin empresa,Entrevista
+6,P006,Sin fecha,Mañana,Obra Sur,Constructora,Supervisión
+7,P003,31,Mañana,Oficina Central,Diseño,Entrega De Planos
+8,P007,31,Madrugada,Sala De Servidores,Soporte TI,Mantenimiento
+9,P008,31,Tarde,Obra Norte,Constructora,Visita Cliente
+10,P009,31,Mañana,Obra Sur,Constructora,Supervisión
+11,P010,32,Tarde,Oficina Central,Diseño,Entrega De Planos
+12,P011,Sin fecha,Mañana,Sala De Servidores,Soporte TI,Mantenimiento
+13,P012,32,Madrugada,Obra Norte,Constructora,Supervisión
+14,P013,32,Mañana,Oficina Central,Diseño,Entrevista
+15,P014,32,Tarde,Obra Sur,Constructora,Visita Cliente
+16,P015,32,Mañana,Sala De Servidores,Sin empresa,Mantenimiento
+17,P016,32,Noche,Obra Norte,Constructora,Supervisión
+18,P017,32,Tarde,Oficina Central,Diseño,Entrega De Planos
+19,P018,33,Mañana,Obra Sur,Constructora,Supervision
+20,P019,33,Noche,Obra Norte,Constructora,Supervisión
+21,P020,33,Mañana,Sala De Servidores,Soporte TI,Mantenimiento
+22,P021,33,Tarde,Oficina Central,Diseño,Entrevista
+23,P022,33,Mañana,Obra Sur,Constructora,Visita Cliente
+24,P023,33,Noche,Obra Norte,Constructora,Supervisión
+25,P018,33,Mañana,Obra Sur,Constructora,Supervisión
+26,P024,35,Mañana,Oficina Central,Diseño,Entrega De Planos
+27,P025,35,Mañana,Sala De Servidores,Soporte TI,Mantenimiento
+28,P026,35,Tarde,Obra Norte,Constructora,Supervisión
+29,P027,36,Tarde,Obra Sur,Constructora,Visita Cliente
+30,P028,36,Mañana,Oficina Central,Diseño,Entrevista
+31,P029,36,Mañana,Sala De Servidores,Soporte TI,Mantenimiento
+32,P030,36,Tarde,Obra Norte,Constructora,Supervisión
+33,P031,36,Mañana,Obra Sur,Constructora,Supervisión
+34,P032,36,Noche,Oficina Central,Diseño,Entrega De Planos
+35,P033,36,Mañana,Sala De Servidores,Soporte TI,Mantenimiento
+36,P034,37,Mañana,Obra Norte,Constructora,Supervisión
+37,P035,37,Noche,Obra Sur,Constructora,Visita Cliente
+38,P036,37,Tarde,Oficina Central,Diseño,Entrevista
+39,P037,37,Tarde,Sala De Servidores,Soporte TI,Mantenimiento
+40,,,,,,
+41,,,,,,
