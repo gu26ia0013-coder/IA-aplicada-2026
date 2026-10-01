@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="bsFE8ibF3EDu0dDIKlJo">
+    <mxGraphModel dx="2887" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=light-dark(#000000,#990000);labelBackgroundColor=light-dark(#FFFFFF,#FF3917);labelBorderColor=light-dark(#000000,#FF1A1A);fillColor=light-dark(#E51400,#990000);strokeColor=#B20000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-110" y="930" as="sourcePoint" />
+            <mxPoint x="1550" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
