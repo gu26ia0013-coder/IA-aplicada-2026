@@ -1,0 +1,105 @@
+PROTOCOLO DE SEGURIDAD PARA INFRAESTRUCTURAS CRÍTICAS DE RED
+Documento interno de referencia — Versión 2.3
+
+1. INTRODUCCIÓN
+
+Las infraestructuras críticas de red constituyen el conjunto de sistemas, equipos y servicios cuya interrupción, degradación o destrucción afectaría de manera significativa la operación de una organización, la continuidad de sus servicios esenciales o la seguridad de la información que custodia. En las últimas dos décadas, la digitalización de procesos industriales, la adopción masiva de servicios en la nube y la interconexión de dispositivos del Internet de las Cosas (IoT) han ampliado drásticamente la superficie de ataque, exponiendo activos que antes permanecían aislados.
+
+Este protocolo establece los lineamientos mínimos obligatorios para la protección de infraestructuras críticas, abarcando controles técnicos, administrativos y físicos. Su aplicación es responsabilidad de todas las áreas que operen, administren o contraten servicios relacionados con dichas infraestructuras. El incumplimiento de estas disposiciones podrá derivar en sanciones administrativas conforme al reglamento interno vigente.
+
+2. ALCANCE
+
+El presente protocolo aplica a:
+
+- Servidores físicos y virtuales que alojen servicios críticos.
+- Dispositivos de red: firewalls, switches, routers y puntos de acceso.
+- Sistemas de almacenamiento y respaldo de información.
+- Plataformas en la nube contratadas con terceros.
+- Dispositivos IoT y sistemas de control industrial (ICS/SCADA).
+- Personal interno y proveedores externos con acceso a la red corporativa.
+
+Quedan excluidos del alcance los equipos de uso personal que no se conecten a la red corporativa, siempre que cumplan con las políticas de dispositivos no gestionados.
+
+3. PRINCIPIOS RECTORES
+
+Toda decisión técnica relacionada con la seguridad de infraestructuras críticas deberá guiarse por los siguientes principios:
+
+3.1. Confidencialidad: la información solo debe ser accesible a personas autorizadas.
+3.2. Integridad: los datos no deben ser alterados de forma no autorizada.
+3.3. Disponibilidad: los servicios críticos deben permanecer operativos cuando se requieran.
+3.4. Defensa en profundidad: múltiples capas de control, no una sola.
+3.5. Mínimo privilegio: cada usuario y sistema debe tener solo los permisos estrictamente necesarios.
+3.6. Zero Trust: no confiar por defecto en ningún usuario, dispositivo o red.
+
+4. CONTROLES TÉCNICOS
+
+4.1. Segmentación de red
+
+La red corporativa deberá segmentarse en zonas diferenciadas según el nivel de criticidad de los activos. Se recomienda implementar VLANs separadas para: usuarios finales, servidores, dispositivos IoT, sistemas de control industrial y gestión administrativa. El tráfico entre zonas deberá pasar obligatoriamente por un firewall con reglas explícitas de permitir o denegar.
+
+4.2. Gestión de identidades y accesos
+
+Todas las cuentas de usuario deberán estar vinculadas a una identidad verificable. Se prohíben las cuentas genéricas o compartidas. La autenticación multifactor (MFA) será obligatoria para: acceso remoto, cuentas administrativas, servicios en la nube y sistemas de control industrial.
+
+4.3. Gestión de vulnerabilidades
+
+Se deberá mantener un inventario actualizado de todos los activos. Mensualmente se ejecutarán escaneos de vulnerabilidades sobre la red interna. Las vulnerabilidades críticas deberán remediarse en un plazo máximo de 72 horas; las altas, en 7 días; las medias, en 30 días.
+
+4.4. Monitoreo y detección
+
+Se implementará un sistema de gestión de eventos e información de seguridad (SIEM) que centralice los registros de firewalls, servidores, endpoints y aplicaciones. Las alertas críticas deberán ser atendidas en un plazo máximo de 30 minutos.
+
+4.5. Respaldo y recuperación
+
+Los datos críticos se respaldarán diariamente de forma automatizada, con copias cifradas en al menos dos ubicaciones distintas. Trimestralmente se realizarán pruebas de restauración documentadas.
+
+5. CONTROLES ADMINISTRATIVOS
+
+5.1. Políticas documentadas
+
+La organización deberá contar con políticas escritas de: uso aceptable, contraseñas, acceso remoto, gestión de incidentes, continuidad del negocio y relación con proveedores.
+
+5.2. Capacitación del personal
+
+Todo el personal con acceso a sistemas de información recibirá capacitación anual en seguridad. Los equipos técnicos recibirán formación especializada cada seis meses.
+
+5.3. Gestión de proveedores
+
+Los proveedores con acceso a la red deberán firmar acuerdos de confidencialidad y cumplir los mismos controles que el personal interno. Se realizarán auditorías periódicas.
+
+6. CONTROLES FÍSICOS
+
+Los centros de datos y salas de comunicaciones deberán contar con: control de acceso biométrico, videovigilancia 24/7, sistemas de detección y extinción de incendios, climatización redundante y respaldo eléctrico (UPS y generadores).
+
+7. RESPUESTA A INCIDENTES
+
+Todo incidente de seguridad deberá reportarse de inmediato al equipo de respuesta. Se distinguen cuatro niveles: crítico, alto, medio y bajo. Los incidentes críticos activan el comité de crisis en un plazo máximo de una hora.
+
+El equipo de respuesta documentará cada incidente en un registro centralizado que incluya: fecha, hora, sistemas afectados, causa raíz, acciones tomadas y lecciones aprendidas.
+
+8. AUDITORÍA Y CUMPLIMIENTO
+
+Anualmente se realizará una auditoría interna de cumplimiento de este protocolo. Los hallazgos se documentarán y se asignarán responsables con plazos definidos. Las áreas que no cumplan deberán presentar un plan de acción correctivo en un plazo de 15 días hábiles.
+
+9. VIGENCIA
+
+Este protocolo entra en vigor a partir de su publicación y sustituye cualquier disposición anterior sobre la materia. Será revisado anualmente o cuando ocurran cambios significativos en la infraestructura o en el panorama de amenazas.
+
+10. GLOSARIO
+
+Firewall: dispositivo que filtra el tráfico de red según reglas definidas.
+MFA: autenticación multifactor, requiere dos o más factores de verificación.
+SIEM: sistema de gestión de eventos e información de seguridad.
+Zero Trust: modelo que no confía por defecto en ningún elemento de la red.
+VLAN: red de área local virtual, segmenta lógicamente una red física.
+
+11. REFERENCIAS INTERNAS
+
+- Política de Seguridad de la Información (PSI-001)
+- Reglamento Interno de Tecnología (RIT-004)
+- Manual de Gestión de Incidentes (MGI-002)
+- Procedimiento de Respaldo y Recuperación (PRR-003)
+
+El código de verificación interno de este documento es AZUL-7342.
+
+FIN DEL DOCUMENTO
