@@ -1,0 +1,34 @@
+(1) | Campo                      | Valor                                                                                                                                                                                                                                                                                                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de incidente          | phishing                                                                                                                                                                                                                                                                                                                                          |
+| Severidad                  | alta                                                                                                                                                                                                                                                                                                                                              |
+| Activo afectado            | Credenciales corporativas (usuario y contraseña del dominio empresarial); laptop corporativa con Windows 11; posible acceso a la carpeta compartida de finanzas.                                                                                                                                                                                  |
+| Primera acción recomendada | Reportar inmediatamente al área de seguridad informática, cambiar la contraseña desde un dispositivo y portal confiables, revocar sesiones activas y solicitar la revisión de los registros de acceso al dominio y a la carpeta de finanzas. Verificar si las credenciales fueron utilizadas por terceros y revisar si hubo actividad sospechosa. |
+| Información faltante       | NO ESPECIFICADO: dirección del remitente y URL del enlace; si la cuenta tiene autenticación multifactor; si se detectaron accesos desconocidos o cambios en la cuenta; si otros usuarios ingresaron sus credenciales; y si la laptop presenta actividad sospechosa.                                                                               |
+
+
+
+
+
+
+(2) | Campo                      | Valor                                                                                                                                                                                                                                                 |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de incidente          | acceso no autorizado                                                                                                                                                                                                                                  |
+| Severidad                  | media                                                                                                                                                                                                                                                 |
+| Activo afectado            | cuenta de correo electrónico del usuario                                                                                                                                                                                                              |
+| Primera acción recomendada | verificar los inicios de sesión recientes, cerrar las sesiones activas desconocidas, activar la autenticación multifactor y reportar el incidente al área de seguridad para investigar el posible acceso no autorizado.                               |
+| Información faltante       | NO ESPECIFICADO: fecha y hora del inicio de sesión sospechoso, dirección IP, ubicación, dispositivo utilizado, si se confirmó un acceso no autorizado, si se realizaron cambios en la cuenta y si la cuenta tiene autenticación multifactor activada. |
+
+
+
+
+
+(3) | Campo                      | Valor                                                                                                                                                                                                                                                                                              |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de incidente          | acceso no autorizado                                                                                                                                                                                                                                                                               |
+| Severidad                  | media                                                                                                                                                                                                                                                                                              |
+| Activo afectado            | cuenta de correo personal utilizada para trabajo; tablet doméstica como posible dispositivo involucrado                                                                                                                                                                                            |
+| Primera acción recomendada | cambiar la contraseña desde un dispositivo confiable, cerrar todas las sesiones activas, habilitar la autenticación multifactor y reportar el acceso sospechoso al área de seguridad. Verificar si hubo accesos o cambios no reconocidos.                                                          |
+| Información faltante       | No se confirma si el acceso fue realizado por una persona no autorizada o por el hermano del usuario. Falta conocer la fecha y hora del acceso, su ubicación exacta, el dispositivo utilizado, si hubo actividad sospechosa en la cuenta y si el celular realmente fue robado o estuvo extraviado. |
+
+

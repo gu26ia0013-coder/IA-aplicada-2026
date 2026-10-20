@@ -1,0 +1,7 @@
+Iteración,Técnica aplicada,C1,C2,C3,Total,Observación
+0,Línea base (zero-shot),6,1,5,dic-18,"Respuestas variadas, mucha verborrea, sin formato fijo."
+1,Rol,6,0,6,dic-18,"El rol mejoró el vocabulario técnico (C3), pero el modelo escribió demasiado y arruinó el formato (C2)."
+2,Rol + contexto,6,0,6,dic-18,"El contexto centró las categorías, pero el formato siguió siendo texto libre."
+3,Rol + contexto + formato,6,6,6,18/18,"Mayor salto. Al exigir tabla exacta y ""NO ESPECIFICADO"", se resolvió C2 y C3 de golpe."
+4,Anterior + ejemplos (few-shot),6,6,6,18/18,"El ejemplo consolidó la consistencia (el modelo usó el ""NO ESPECIFICADO"" literal)."
+5,Anterior + cadena de razonamiento,6,6,6,18/18,"El modelo ignoró la sección ""Análisis"" por la orden de ""sin texto adicional"". Formato intacto."
