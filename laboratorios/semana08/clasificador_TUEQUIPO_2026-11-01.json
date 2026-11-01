@@ -1,0 +1,166 @@
+﻿{
+  "name": "Clasificador de Reportes",
+  "type": "SHARED",
+  "summary": "",
+  "description": "",
+  "tags": [],
+  "blogUrl": "",
+  "metadata": {
+    "externalId": "2jVS1QYY7lxBl5Y5XNFtY"
+  },
+  "author": "ALEXANDER KALED ALVAREZ INZUNZA",
+  "categories": [],
+  "pieces": [
+    "@activepieces/piece-forms",
+    "@activepieces/piece-ai"
+  ],
+  "flows": [
+    {
+      "displayName": "Clasificador de Reportes",
+      "trigger": {
+        "name": "trigger",
+        "valid": true,
+        "displayName": "Formulario Web",
+        "nextAction": {
+          "name": "step_1",
+          "skip": false,
+          "type": "PIECE",
+          "valid": true,
+          "settings": {
+            "input": {
+              "prompt": "Eres un clasificador de correos reportados por usuarios. Lee el reporte y responde\ncon UNA SOLA PALABRA, en mayúsculas, sin explicaciones, sin puntos y sin ninguna\notra cosa.\nResponde PHISHING si el correo pide contraseñas o datos, presiona con urgencia,\nusa un remitente que imita a uno real, o pide descargar o pagar algo.\nResponde LEGITIMO en cualquier otro caso.\nReporte:{{trigger['output']['descripcion']}}\n",
+              "webSearch": false,
+              "aiProviderModel": {
+                "model": "fast",
+                "configId": "LCSTZXyuOsgAfSdlRiayT",
+                "provider": "activepieces"
+              },
+              "maxOutputTokens": 2000,
+              "webSearchOptions": {}
+            },
+            "pieceName": "@activepieces/piece-ai",
+            "actionName": "askAi",
+            "sampleData": {},
+            "pieceVersion": "0.15.1",
+            "propertySettings": {
+              "prompt": {
+                "type": "MANUAL"
+              },
+              "webSearch": {
+                "type": "MANUAL"
+              },
+              "creativity": {
+                "type": "MANUAL"
+              },
+              "aiProviderModel": {
+                "type": "MANUAL"
+              },
+              "conversationKey": {
+                "type": "MANUAL"
+              },
+              "maxOutputTokens": {
+                "type": "MANUAL"
+              },
+              "webSearchOptions": {
+                "type": "MANUAL",
+                "schema": {}
+              }
+            },
+            "errorHandlingOptions": {
+              "retryOnFailure": {
+                "value": false
+              },
+              "continueOnFailure": {
+                "value": false
+              }
+            }
+          },
+          "nextAction": {
+            "name": "step_2",
+            "skip": false,
+            "type": "PIECE",
+            "valid": true,
+            "settings": {
+              "input": {
+                "markdown": "Clasificación:{{step_1['output']}}"
+              },
+              "pieceName": "@activepieces/piece-forms",
+              "actionName": "return_response",
+              "sampleData": {},
+              "pieceVersion": "0.5.0",
+              "propertySettings": {
+                "file": {
+                  "type": "MANUAL"
+                },
+                "markdown": {
+                  "type": "MANUAL"
+                }
+              },
+              "errorHandlingOptions": {
+                "retryOnFailure": {
+                  "value": false
+                },
+                "continueOnFailure": {
+                  "value": false
+                }
+              }
+            },
+            "displayName": "Respuesta en la IU",
+            "lastUpdatedDate": "2026-11-01T20:04:22.898Z"
+          },
+          "displayName": "Preguntar IA",
+          "lastUpdatedDate": "2026-11-01T20:04:22.897Z"
+        },
+        "lastUpdatedDate": "2026-11-01T20:04:22.896Z",
+        "type": "PIECE_TRIGGER",
+        "settings": {
+          "sampleData": {},
+          "propertySettings": {
+            "about": {
+              "type": "MANUAL"
+            },
+            "inputs": {
+              "type": "MANUAL"
+            },
+            "response": {
+              "type": "MANUAL"
+            },
+            "waitForResponse": {
+              "type": "MANUAL"
+            }
+          },
+          "pieceName": "@activepieces/piece-forms",
+          "pieceVersion": "0.5.0",
+          "triggerName": "form_submission",
+          "input": {
+            "inputs": [
+              {
+                "type": "text",
+                "required": true,
+                "description": "",
+                "displayName": "nombre"
+              },
+              {
+                "type": "text",
+                "required": true,
+                "description": "",
+                "displayName": "ubicacion "
+              },
+              {
+                "type": "text",
+                "required": true,
+                "description": "",
+                "displayName": "descripcion"
+              }
+            ],
+            "waitForResponse": true
+          }
+        }
+      },
+      "valid": true,
+      "schemaVersion": "28",
+      "notes": []
+    }
+  ],
+  "status": "PUBLISHED"
+}
